@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+// colors
+$dark-cyan:rgb(25, 162, 174) ;
+$very-dark-desaturated-blue: hsl(229, 23%, 23%);
+$dark-grayish-blue: hsl(227, 10%, 46%) ;
+$dark-gray: hsl(0, 0%, 59%);
+$circle:rgb(33, 176, 186);
+
+
+h1,h2{
+    font-size: 18px;
+    color: $very-dark-desaturated-blue;
+}
+
+body{
+    background-color: $dark-cyan;
+    overflow: hidden;
+}
+
+main{
+    background-color: #fff;
+    position: absolute;  
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 350px;
+    width: 90%;
+    min-width: 280px;
+    border-radius: 14px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.profile {
+    img{
+        margin-top: -58px;
+        border-radius: 50%;
+        border: 6px solid white;
+        margin-bottom: 14px;
+        background: white;
+    }
+    .city{
+        color: $dark-gray;
+        padding-bottom: 24px;
+        font-size: 14px;
+        border-bottom: 1px solid $dark-gray;
+        
+    }
+}
+
+.profile-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px;
+    p{
+        color: $dark-grayish-blue;
+        margin-left: 10px;
+        font-size: 18px;
+        
+    }
+}
+
+.stats{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 48px;
+    p {
+        font-size: 13px;
+        color: $dark-gray;
+    }
+}
+
+.circle{
+    width: 970px;
+    height: 954px;
+    background-color: $circle;
+    border-radius: 50%;
+    position: absolute;  
+    z-index: -10;
+    top: 0%;
+    left: 17%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(200deg, rgba(33,176,186,1) 0%, rgba(25,162,174,1) 100%);
+}
+.c-2{
+    top: 100%;
+    left: 84%;
+    background: linear-gradient(180deg, rgba(33,176,186,1) 0%, rgba(25,162,174,1) 100%);
+   
+}
+
